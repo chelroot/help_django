@@ -5,4 +5,5 @@ python manage.py migrate
 curl  http://127.0.0.1:8000/
 nohup nice python manage.py runserver  &
 python manage.py shell
-
+python manage.py makemigrations
+pythonpython manage.py migrate
