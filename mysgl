@@ -4,6 +4,13 @@ show tables;
 SELECT * FROM   mainapp_flag;
 INSERT INTO mainapp_flag(flag) VALUES ('blue');
 
+import MySQLdb
+MyDB=MySQLdb.connect(host='localhost', user='root', passwd='333', db='kt2', charset='utf8')
+cursor = MyDB.cursor()
+sql = '''insert into mainapp_tag (kod, time) values ('%(kod)s', '%(time)s')'''%{'kod':idd, 'time':nnow}
+cursor.execute(sql)
+MyDB.commit()
+
 
 
 
