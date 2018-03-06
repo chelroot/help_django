@@ -12,10 +12,11 @@ cursor.execute(sql)
 MyDB.commit()
 
 
+SELECT * FROM   mainapp_tag ORDER BY id DESC LIMIT 1;
 
+SELECT * FROM  mainapp_tag WHERE time BETWEEN STR_TO_DATE('2018-03-06 15:13:21', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2018-03-06 16:01:38', '%Y-%m-%d %H:%i:%s');
 
-
-
+ CREATE TABLE tag ( id  int UNSIGNED NOT NULL AUTO_INCREMENT , kod  varchar(30) NOT NULL , time  datetime NULL , PRIMARY KEY (id) );
 
 
 Разрешить root
