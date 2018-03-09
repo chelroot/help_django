@@ -2,7 +2,10 @@ SHOW DATABASES;
 use kt2
 show tables;
 SELECT * FROM   mainapp_flag;
+SELECT * FROM   auth_user;
 INSERT INTO mainapp_flag(flag) VALUES ('blue');
+CREATE DATABASE shop4 CHARACTER SET utf8;
+
 
 import MySQLdb
 MyDB=MySQLdb.connect(host='localhost', user='root', passwd='333', db='kt2', charset='utf8')
