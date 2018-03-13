@@ -6,6 +6,8 @@ SELECT * FROM   auth_user;
 INSERT INTO mainapp_flag(flag) VALUES ('blue');
 CREATE DATABASE shop4 CHARACTER SET utf8;
 
+ALTER TABLE mainApp_get_form ADD time TIMESTAMP; вставить столбец с датой 
+TRUNCATE TABLE tag1; удалсить данные из таблицы
 
 import MySQLdb
 MyDB=MySQLdb.connect(host='localhost', user='root', passwd='333', db='kt2', charset='utf8')
