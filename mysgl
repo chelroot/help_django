@@ -32,3 +32,7 @@ mysql> UPDATE user SET plugin='mysql_native_password' WHERE User='root';
 mysql> FLUSH PRIVILEGES;
 mysql> exit;
 $ service mysql restart
+
+python manage.py migrate --fake-initial ###https://djbook.ru/forum/topic/4776/
+
+
