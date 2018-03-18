@@ -16,6 +16,7 @@ sql = '''insert into mainapp_tag (kod, time) values ('%(kod)s', '%(time)s')'''%{
 cursor.execute(sql)
 MyDB.commit()
 
+cursor.execute("UPDATE mainapp_flag SET flag='Chevrolet5' WHERE id=4");
 
 SELECT * FROM   mainapp_tag ORDER BY id DESC LIMIT 1;
 
