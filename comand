@@ -7,3 +7,4 @@ nohup nice python manage.py runserver  &
 python manage.py shell
 python manage.py makemigrations
 python manage.py migrate
+perl -p -i -e "s/\r\n/\n/;" *.css  # Убрать ^M
