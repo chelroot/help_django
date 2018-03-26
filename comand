@@ -8,3 +8,4 @@ python manage.py shell
 python manage.py makemigrations
 python manage.py migrate
 perl -p -i -e "s/\r\n/\n/;" *.css  # Убрать ^M
+https://codepen.io/cocaineee/pen/qoPmJw
